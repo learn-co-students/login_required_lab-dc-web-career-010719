@@ -1,0 +1,6 @@
+<h1>Hi, <%=session[:name]%></h1>
+<%= form_tag ({controller: 'sessions', action: 'destroy', method: 'post'}) do %>
+  <input type=submit value='Logout'>
+<% end %>
+
+<h2><%= link_to "Secrets", secret_path %></h2>
